@@ -6,7 +6,6 @@ int main()
 {
 	char *c=(char*)malloc(10*sizeof(char));
 	char *c1=(char*)malloc(10*sizeof(char));
-	printf("enter first string\n");
 	int i=0,j;
 	char ch;
 	while((ch=getchar())!='\n')
@@ -18,7 +17,6 @@ int main()
 	}
 	c[i]='\0';
 	i=0;
-	printf("enter secound string\n");
 	while((ch=getchar())!='\n')
 	{
 		c1[i]=ch;
@@ -55,16 +53,7 @@ int main()
 			}		
 		}
 	}
-	for(i=0;i<=strlen(c);i++)// A Naive recursive C++ program to find minimum number
-
-	{
-		for(j=0;j<=strlen(c1);j++)
-		{
-			printf("%d\t",matrix[i][j]);
-		}
-		printf("\n");
-	}
-	
+	printf("%d",matrix[i-1][j-1]);
 }
 int min(int a,int b,int c)
 {
