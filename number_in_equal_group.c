@@ -1,7 +1,4 @@
 #include<stdio.h>
-#include<ctype.h>
-#include<string.h>
-int min(int,int);
 int main()
 {
 	long int n,a,b,i;
@@ -11,7 +8,7 @@ int main()
 		printf("NO");
 		return;
 	}
-	if(n<0)
+	if(n<=0)
 	{
 		printf("Invalid Input");
 		return;
