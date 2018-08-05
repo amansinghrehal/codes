@@ -1,12 +1,19 @@
 #include<stdio.h>
+#include<ctype.h>
+#include<string.h>
 int min(int,int);
 int main()
 {
-	int n,a,b,i;
-	scanf("%d %d %d",&n,&a,&b);
+	long int n,a,b,i;
+	scanf("%ld %ld %ld",&n,&a,&b); 
 	if(n%2!=0)
 	{
-		printf("no");
+		printf("NO");
+		return;
+	}
+	if(n<0)
+	{
+		printf("Invalid Input");
 		return;
 	}
 	n=n/2;
@@ -42,4 +49,3 @@ int main()
 	else
 		printf("YES");
 }
-
