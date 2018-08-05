@@ -8,22 +8,12 @@ int main()
 	int i=0;
 	printf("enter the number\n");
 	scanf("%s",str);
-	int len=strlen(str);
 	printf("enter the number of digits to delete\n");
 	scanf("%d",&k);
-	if(k>len)
-	{
-		printf("Invald Input");
-		return;
-	}
+	int len=strlen(str);
 	int input[len];
 	for(i=0;i<len;i++)
 	{
-		if(isalpha(str[i]))
-		{
-			printf("Invald Input");
-			return;
-		}
 		input[i]=str[i]-48;
 	}
 	int result[len];
