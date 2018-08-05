@@ -6,10 +6,8 @@ int main()
 	char str[20];
 	int k;
 	int i=0;
-	printf("enter the number\n");
 	scanf("%s",str);
 	int len=strlen(str);
-	printf("enter the number of digits to delete\n");
 	scanf("%d",&k);
 	if(k>len)
 	{
